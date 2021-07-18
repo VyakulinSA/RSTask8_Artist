@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C83B60226A2D3AD00963FB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83B60126A2D3AD00963FB5 /* AppDelegate.m */; };
+		3C83B60B26A2D3AD00963FB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C83B60926A2D3AD00963FB5 /* Main.storyboard */; };
+		3C83B60D26A2D3AF00963FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C83B60C26A2D3AF00963FB5 /* Assets.xcassets */; };
+		3C83B61026A2D3AF00963FB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C83B60E26A2D3AF00963FB5 /* LaunchScreen.storyboard */; };
+		3C83B61326A2D3AF00963FB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83B61226A2D3AF00963FB5 /* main.m */; };
+		3C83B61C26A2D6C400963FB5 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C83B61A26A2D6C400963FB5 /* Montserrat-Medium.ttf */; };
+		3C83B61D26A2D6C400963FB5 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C83B61B26A2D6C400963FB5 /* Montserrat-Regular.ttf */; };
+		3C83B64526A2D9A200963FB5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83B64426A2D9A200963FB5 /* SceneDelegate.m */; };
+		3C83B64826A2DA7D00963FB5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83B64726A2DA7D00963FB5 /* FirstViewController.m */; };
+		3C83B64C26A2DA9D00963FB5 /* DrawingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83B64B26A2DA9D00963FB5 /* DrawingsViewController.m */; };
+		3C83B65326A3053D00963FB5 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83B65126A3053D00963FB5 /* ModalViewController.m */; };
+		3C83B65426A3053D00963FB5 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C83B65226A3053D00963FB5 /* ModalViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C83B5FD26A2D3AD00963FB5 /* RSSchool_T8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C83B60026A2D3AD00963FB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C83B60126A2D3AD00963FB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C83B60A26A2D3AD00963FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C83B60C26A2D3AF00963FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C83B60F26A2D3AF00963FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C83B61126A2D3AF00963FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C83B61226A2D3AF00963FB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C83B61A26A2D6C400963FB5 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		3C83B61B26A2D6C400963FB5 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		3C83B64326A2D9A200963FB5 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3C83B64426A2D9A200963FB5 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3C83B64626A2DA7D00963FB5 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		3C83B64726A2DA7D00963FB5 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		3C83B64A26A2DA9D00963FB5 /* DrawingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingsViewController.h; sourceTree = "<group>"; };
+		3C83B64B26A2DA9D00963FB5 /* DrawingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingsViewController.m; sourceTree = "<group>"; };
+		3C83B65026A3053D00963FB5 /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		3C83B65126A3053D00963FB5 /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		3C83B65226A3053D00963FB5 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C83B5FA26A2D3AD00963FB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C83B5F426A2D3AD00963FB5 = {
+			isa = PBXGroup;
+			children = (
+				3C83B5FF26A2D3AD00963FB5 /* RSSchool_T8 */,
+				3C83B5FE26A2D3AD00963FB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C83B5FE26A2D3AD00963FB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C83B5FD26A2D3AD00963FB5 /* RSSchool_T8.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C83B5FF26A2D3AD00963FB5 /* RSSchool_T8 */ = {
+			isa = PBXGroup;
+			children = (
+				3C83B60026A2D3AD00963FB5 /* AppDelegate.h */,
+				3C83B60126A2D3AD00963FB5 /* AppDelegate.m */,
+				3C83B64326A2D9A200963FB5 /* SceneDelegate.h */,
+				3C83B64426A2D9A200963FB5 /* SceneDelegate.m */,
+				3C83B64926A2DA8600963FB5 /* Controllers */,
+				3C83B65526A3058200963FB5 /* Views */,
+				3C83B60C26A2D3AF00963FB5 /* Assets.xcassets */,
+				3C83B60E26A2D3AF00963FB5 /* LaunchScreen.storyboard */,
+				3C83B61126A2D3AF00963FB5 /* Info.plist */,
+				3C83B61226A2D3AF00963FB5 /* main.m */,
+				3C83B61926A2D6C400963FB5 /* RSSchool_T8_Fonts */,
+			);
+			path = RSSchool_T8;
+			sourceTree = "<group>";
+		};
+		3C83B61926A2D6C400963FB5 /* RSSchool_T8_Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3C83B61A26A2D6C400963FB5 /* Montserrat-Medium.ttf */,
+				3C83B61B26A2D6C400963FB5 /* Montserrat-Regular.ttf */,
+			);
+			path = RSSchool_T8_Fonts;
+			sourceTree = "<group>";
+		};
+		3C83B64926A2DA8600963FB5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C83B64626A2DA7D00963FB5 /* FirstViewController.h */,
+				3C83B64726A2DA7D00963FB5 /* FirstViewController.m */,
+				3C83B64A26A2DA9D00963FB5 /* DrawingsViewController.h */,
+				3C83B64B26A2DA9D00963FB5 /* DrawingsViewController.m */,
+				3C83B65026A3053D00963FB5 /* ModalViewController.h */,
+				3C83B65126A3053D00963FB5 /* ModalViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3C83B65526A3058200963FB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C83B60926A2D3AD00963FB5 /* Main.storyboard */,
+				3C83B65226A3053D00963FB5 /* ModalViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C83B5FC26A2D3AD00963FB5 /* RSSchool_T8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C83B61626A2D3AF00963FB5 /* Build configuration list for PBXNativeTarget "RSSchool_T8" */;
+			buildPhases = (
+				3C83B5F926A2D3AD00963FB5 /* Sources */,
+				3C83B5FA26A2D3AD00963FB5 /* Frameworks */,
+				3C83B5FB26A2D3AD00963FB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSchool_T8;
+			productName = RSSchool_T8;
+			productReference = 3C83B5FD26A2D3AD00963FB5 /* RSSchool_T8.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C83B5F526A2D3AD00963FB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3C83B5FC26A2D3AD00963FB5 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 3C83B5F826A2D3AD00963FB5 /* Build configuration list for PBXProject "RSSchool_T8" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C83B5F426A2D3AD00963FB5;
+			productRefGroup = 3C83B5FE26A2D3AD00963FB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C83B5FC26A2D3AD00963FB5 /* RSSchool_T8 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C83B5FB26A2D3AD00963FB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C83B61026A2D3AF00963FB5 /* LaunchScreen.storyboard in Resources */,
+				3C83B60D26A2D3AF00963FB5 /* Assets.xcassets in Resources */,
+				3C83B65426A3053D00963FB5 /* ModalViewController.xib in Resources */,
+				3C83B61C26A2D6C400963FB5 /* Montserrat-Medium.ttf in Resources */,
+				3C83B61D26A2D6C400963FB5 /* Montserrat-Regular.ttf in Resources */,
+				3C83B60B26A2D3AD00963FB5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C83B5F926A2D3AD00963FB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C83B60226A2D3AD00963FB5 /* AppDelegate.m in Sources */,
+				3C83B64C26A2DA9D00963FB5 /* DrawingsViewController.m in Sources */,
+				3C83B65326A3053D00963FB5 /* ModalViewController.m in Sources */,
+				3C83B61326A2D3AF00963FB5 /* main.m in Sources */,
+				3C83B64526A2D9A200963FB5 /* SceneDelegate.m in Sources */,
+				3C83B64826A2DA7D00963FB5 /* FirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C83B60926A2D3AD00963FB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C83B60A26A2D3AD00963FB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C83B60E26A2D3AF00963FB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C83B60F26A2D3AF00963FB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C83B61426A2D3AF00963FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3C83B61526A2D3AF00963FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C83B61726A2D3AF00963FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8VCS3U2KK;
+				INFOPLIST_FILE = RSSchool_T8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VyakulinSA.RSSchool-T8";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3C83B61826A2D3AF00963FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8VCS3U2KK;
+				INFOPLIST_FILE = RSSchool_T8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VyakulinSA.RSSchool-T8";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C83B5F826A2D3AD00963FB5 /* Build configuration list for PBXProject "RSSchool_T8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C83B61426A2D3AF00963FB5 /* Debug */,
+				3C83B61526A2D3AF00963FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C83B61626A2D3AF00963FB5 /* Build configuration list for PBXNativeTarget "RSSchool_T8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C83B61726A2D3AF00963FB5 /* Debug */,
+				3C83B61826A2D3AF00963FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C83B5F526A2D3AD00963FB5 /* Project object */;
+}

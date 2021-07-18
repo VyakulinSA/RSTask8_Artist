@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NXg-cY-cLH">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Artist-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJ4-7C-vGG">
+                                <rect key="frame" x="38" y="102" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3rY-7d-eHB"/>
+                                    <constraint firstAttribute="height" constant="300" id="m5x-PW-ERt"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZr-7d-RNo">
+                                <rect key="frame" x="20" y="452" width="163" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="BWl-gC-pAF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="163" id="jDb-PP-OB5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="21" minY="5" maxX="21" maxY="5"/>
+                                <state key="normal" title="Open Palette">
+                                    <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOY-8Y-QcU">
+                                <rect key="frame" x="20" y="504" width="151" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" id="DG8-cT-TJD"/>
+                                    <constraint firstAttribute="height" constant="32" id="TkK-Ym-XLn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="21" minY="5" maxX="21" maxY="5"/>
+                                <state key="normal" title="Open Timer">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXd-KD-JwV">
+                                <rect key="frame" x="243" y="452" width="91" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="BMU-TS-Wmk"/>
+                                    <constraint firstAttribute="height" constant="32" id="KXS-yG-udb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="21" minY="5" maxX="21" maxY="5"/>
+                                <state key="normal" title="Draw">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21d-3g-xrR">
+                                <rect key="frame" x="239" y="504" width="95" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="95" id="Wqb-tc-eod"/>
+                                    <constraint firstAttribute="height" constant="32" id="Xbd-SR-9bS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="21" minY="5" maxX="21" maxY="5"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JJ4-7C-vGG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="17f-DA-oya"/>
+                            <constraint firstItem="mXd-KD-JwV" firstAttribute="leading" secondItem="RZr-7d-RNo" secondAttribute="trailing" constant="60" id="413-dp-S5S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="21d-3g-xrR" secondAttribute="trailing" constant="41" id="6V7-Am-9Dm"/>
+                            <constraint firstItem="RZr-7d-RNo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BUk-Hl-5lV"/>
+                            <constraint firstItem="RZr-7d-RNo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="452" id="EIR-fp-WZd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mXd-KD-JwV" secondAttribute="trailing" constant="41" id="HA4-fc-zXa"/>
+                            <constraint firstItem="mXd-KD-JwV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="243" id="LzE-yi-HIK"/>
+                            <constraint firstItem="JJ4-7C-vGG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="102" id="QTd-lj-eIZ"/>
+                            <constraint firstItem="mXd-KD-JwV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="452" id="Qtp-E5-LMb"/>
+                            <constraint firstItem="21d-3g-xrR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="239" id="UIb-xc-UqO"/>
+                            <constraint firstItem="21d-3g-xrR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="504" id="fJO-t8-1GL"/>
+                            <constraint firstItem="IOY-8Y-QcU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iVW-e6-q5O"/>
+                            <constraint firstItem="21d-3g-xrR" firstAttribute="leading" secondItem="IOY-8Y-QcU" secondAttribute="trailing" constant="68" id="luU-Sb-zFf"/>
+                            <constraint firstItem="IOY-8Y-QcU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="504" id="rfd-Ys-0pa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artist" id="ZMq-Hp-48J">
+                        <barButtonItem key="rightBarButtonItem" title="Drawings" id="wPL-aZ-DHQ">
+                            <connections>
+                                <segue destination="3ON-5P-0Jn" kind="show" id="ZOP-i5-ews"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="canvasView" destination="JJ4-7C-vGG" id="pab-qJ-yu5"/>
+                        <outlet property="drawButton" destination="mXd-KD-JwV" id="JrH-Z0-jae"/>
+                        <outlet property="openPaletteButton" destination="RZr-7d-RNo" id="64m-dJ-vYn"/>
+                        <outlet property="openTimerButton" destination="IOY-8Y-QcU" id="8sM-Ir-mml"/>
+                        <outlet property="shareButton" destination="21d-3g-xrR" id="cbg-cr-fdB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="96.7016491754123"/>
+        </scene>
+        <!--Drawings-->
+        <scene sceneID="uau-7Z-pb0">
+            <objects>
+                <viewController id="3ON-5P-0Jn" customClass="DrawingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bBB-3M-QLO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ngM-Hx-fwc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Drawings" id="fAj-aT-15j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvs-z8-PrJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1769" y="97"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mcT-d6-bSa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NXg-cY-cLH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9DQ-ar-7Gp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oUR-Vv-9id"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTr-Ry-jFV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="97"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
