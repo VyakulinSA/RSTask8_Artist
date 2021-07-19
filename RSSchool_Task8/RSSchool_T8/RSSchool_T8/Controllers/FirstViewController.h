@@ -10,11 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class TimerViewController;
+
 @interface FirstViewController : UIViewController
 
 @property (nonatomic) ModalViewController *modalVC;
+@property (nonatomic) TimerViewController *timerVC;
 @property (nonatomic) NSMutableArray<UIButton*> *canvasButtonsArray;
 @property (nonatomic) NSMutableArray<UIColor*> *canvasColorsArray;
+@property float timerInterval;
+@property NSMutableString *canvasLayersName;
 
 @end
 

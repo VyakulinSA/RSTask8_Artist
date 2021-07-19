@@ -10,10 +10,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol ModalViewDelegate
-
 @property (nonatomic) NSMutableArray<UIButton*> *canvasButtonsArray;
 
 -(void) closeModalView;
+-(void) closeTimerView;
 
 @end
 
@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSMutableArray<UIButton*> *paletteColorsArray;
 @property NSTimer *paletteTimer;
 @property BOOL fastCheckPalette;
+
+-(void)preSettPaletteButtons;
+-(void)uncheckPaletteButton:(UIButton *)paletteButton;
 
 @end
 

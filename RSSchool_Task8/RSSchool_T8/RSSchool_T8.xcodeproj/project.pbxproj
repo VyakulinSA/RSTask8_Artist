@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C4F5FCA26A55C680020D835 /* CanvasDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F5FC926A55C680020D835 /* CanvasDrawView.m */; };
+		3C4F5FD126A5A0D70020D835 /* DrawingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F5FD026A5A0D70020D835 /* DrawingsViewController.swift */; };
+		3C4F5FD526A5B89C0020D835 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F5FD326A5B89C0020D835 /* TimerViewController.swift */; };
+		3C4F5FD626A5B89C0020D835 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4F5FD426A5B89C0020D835 /* TimerViewController.xib */; };
+		3C4F5FD926A5FA540020D835 /* CustomButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F5FD826A5FA540020D835 /* CustomButtons.m */; };
 		3C83B60226A2D3AD00963FB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83B60126A2D3AD00963FB5 /* AppDelegate.m */; };
 		3C83B60B26A2D3AD00963FB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C83B60926A2D3AD00963FB5 /* Main.storyboard */; };
 		3C83B60D26A2D3AF00963FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C83B60C26A2D3AF00963FB5 /* Assets.xcassets */; };
@@ -16,12 +21,19 @@
 		3C83B61D26A2D6C400963FB5 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C83B61B26A2D6C400963FB5 /* Montserrat-Regular.ttf */; };
 		3C83B64526A2D9A200963FB5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83B64426A2D9A200963FB5 /* SceneDelegate.m */; };
 		3C83B64826A2DA7D00963FB5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83B64726A2DA7D00963FB5 /* FirstViewController.m */; };
-		3C83B64C26A2DA9D00963FB5 /* DrawingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83B64B26A2DA9D00963FB5 /* DrawingsViewController.m */; };
 		3C83B65326A3053D00963FB5 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83B65126A3053D00963FB5 /* ModalViewController.m */; };
 		3C83B65426A3053D00963FB5 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C83B65226A3053D00963FB5 /* ModalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C4F5FC826A55C680020D835 /* CanvasDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasDrawView.h; sourceTree = "<group>"; };
+		3C4F5FC926A55C680020D835 /* CanvasDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasDrawView.m; sourceTree = "<group>"; };
+		3C4F5FCF26A5A0D60020D835 /* RSSchool_T8-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSchool_T8-Bridging-Header.h"; sourceTree = "<group>"; };
+		3C4F5FD026A5A0D70020D835 /* DrawingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingsViewController.swift; sourceTree = "<group>"; };
+		3C4F5FD326A5B89C0020D835 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		3C4F5FD426A5B89C0020D835 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		3C4F5FD726A5FA540020D835 /* CustomButtons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomButtons.h; sourceTree = "<group>"; };
+		3C4F5FD826A5FA540020D835 /* CustomButtons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButtons.m; sourceTree = "<group>"; };
 		3C83B5FD26A2D3AD00963FB5 /* RSSchool_T8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C83B60026A2D3AD00963FB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3C83B60126A2D3AD00963FB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,8 +48,6 @@
 		3C83B64426A2D9A200963FB5 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		3C83B64626A2DA7D00963FB5 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		3C83B64726A2DA7D00963FB5 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		3C83B64A26A2DA9D00963FB5 /* DrawingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingsViewController.h; sourceTree = "<group>"; };
-		3C83B64B26A2DA9D00963FB5 /* DrawingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingsViewController.m; sourceTree = "<group>"; };
 		3C83B65026A3053D00963FB5 /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		3C83B65126A3053D00963FB5 /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		3C83B65226A3053D00963FB5 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
@@ -54,6 +64,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C4F5FCB26A55C710020D835 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				3C4F5FC826A55C680020D835 /* CanvasDrawView.h */,
+				3C4F5FC926A55C680020D835 /* CanvasDrawView.m */,
+				3C4F5FD726A5FA540020D835 /* CustomButtons.h */,
+				3C4F5FD826A5FA540020D835 /* CustomButtons.m */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		3C4F5FD226A5A0F70020D835 /* SwiftControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C4F5FD026A5A0D70020D835 /* DrawingsViewController.swift */,
+				3C4F5FD326A5B89C0020D835 /* TimerViewController.swift */,
+			);
+			path = SwiftControllers;
+			sourceTree = "<group>";
+		};
 		3C83B5F426A2D3AD00963FB5 = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +107,15 @@
 				3C83B60126A2D3AD00963FB5 /* AppDelegate.m */,
 				3C83B64326A2D9A200963FB5 /* SceneDelegate.h */,
 				3C83B64426A2D9A200963FB5 /* SceneDelegate.m */,
+				3C4F5FCB26A55C710020D835 /* CustomView */,
+				3C4F5FD226A5A0F70020D835 /* SwiftControllers */,
 				3C83B64926A2DA8600963FB5 /* Controllers */,
 				3C83B65526A3058200963FB5 /* Views */,
 				3C83B60C26A2D3AF00963FB5 /* Assets.xcassets */,
 				3C83B60E26A2D3AF00963FB5 /* LaunchScreen.storyboard */,
 				3C83B61126A2D3AF00963FB5 /* Info.plist */,
 				3C83B61226A2D3AF00963FB5 /* main.m */,
+				3C4F5FCF26A5A0D60020D835 /* RSSchool_T8-Bridging-Header.h */,
 				3C83B61926A2D6C400963FB5 /* RSSchool_T8_Fonts */,
 			);
 			path = RSSchool_T8;
@@ -102,8 +135,6 @@
 			children = (
 				3C83B64626A2DA7D00963FB5 /* FirstViewController.h */,
 				3C83B64726A2DA7D00963FB5 /* FirstViewController.m */,
-				3C83B64A26A2DA9D00963FB5 /* DrawingsViewController.h */,
-				3C83B64B26A2DA9D00963FB5 /* DrawingsViewController.m */,
 				3C83B65026A3053D00963FB5 /* ModalViewController.h */,
 				3C83B65126A3053D00963FB5 /* ModalViewController.m */,
 			);
@@ -115,6 +146,7 @@
 			children = (
 				3C83B60926A2D3AD00963FB5 /* Main.storyboard */,
 				3C83B65226A3053D00963FB5 /* ModalViewController.xib */,
+				3C4F5FD426A5B89C0020D835 /* TimerViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,6 +181,7 @@
 				TargetAttributes = {
 					3C83B5FC26A2D3AD00963FB5 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -175,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4F5FD626A5B89C0020D835 /* TimerViewController.xib in Resources */,
 				3C83B61026A2D3AF00963FB5 /* LaunchScreen.storyboard in Resources */,
 				3C83B60D26A2D3AF00963FB5 /* Assets.xcassets in Resources */,
 				3C83B65426A3053D00963FB5 /* ModalViewController.xib in Resources */,
@@ -191,11 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4F5FD126A5A0D70020D835 /* DrawingsViewController.swift in Sources */,
 				3C83B60226A2D3AD00963FB5 /* AppDelegate.m in Sources */,
-				3C83B64C26A2DA9D00963FB5 /* DrawingsViewController.m in Sources */,
 				3C83B65326A3053D00963FB5 /* ModalViewController.m in Sources */,
+				3C4F5FD926A5FA540020D835 /* CustomButtons.m in Sources */,
 				3C83B61326A2D3AF00963FB5 /* main.m in Sources */,
+				3C4F5FD526A5B89C0020D835 /* TimerViewController.swift in Sources */,
 				3C83B64526A2D9A200963FB5 /* SceneDelegate.m in Sources */,
+				3C4F5FCA26A55C680020D835 /* CanvasDrawView.m in Sources */,
 				3C83B64826A2DA7D00963FB5 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8VCS3U2KK;
 				INFOPLIST_FILE = RSSchool_T8/Info.plist;
@@ -349,6 +387,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.VyakulinSA.RSSchool-T8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T8/RSSchool_T8-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -358,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8VCS3U2KK;
 				INFOPLIST_FILE = RSSchool_T8/Info.plist;
@@ -368,6 +410,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.VyakulinSA.RSSchool-T8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T8/RSSchool_T8-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

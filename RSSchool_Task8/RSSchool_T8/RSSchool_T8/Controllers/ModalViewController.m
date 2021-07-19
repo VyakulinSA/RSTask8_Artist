@@ -6,9 +6,10 @@
 //
 
 #import "ModalViewController.h"
+#import "CustomButtons.h"
 
 @interface ModalViewController () <NSObject>
-@property (weak, nonatomic) IBOutlet UIButton *saveButton;
+@property (weak, nonatomic) IBOutlet CustomButtons *saveButton;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *paletteButtonsColl;
 
 @end
@@ -36,7 +37,7 @@
 }
 
 -(void)preSettElements {
-    //shareButton
+    //saveButton
     CGColorRef shadowColor = [[[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0.25] CGColor];
     [self preSettButtons:_saveButton];
     [self createShadowfor:_saveButton shadowPathRadius:10 color:shadowColor opacity:1 shadowRadius:1 offset:CGSizeZero];

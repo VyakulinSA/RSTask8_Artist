@@ -24,13 +24,23 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJ4-7C-vGG">
                                 <rect key="frame" x="38" y="102" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXC-Xa-p2K" customClass="CanvasDrawView">
+                                        <rect key="frame" x="20" y="20" width="260" height="260"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="3rY-7d-eHB"/>
+                                    <constraint firstAttribute="trailing" secondItem="hXC-Xa-p2K" secondAttribute="trailing" constant="20" id="BjP-ae-R2s"/>
+                                    <constraint firstItem="hXC-Xa-p2K" firstAttribute="top" secondItem="JJ4-7C-vGG" secondAttribute="top" constant="20" id="Gwt-M5-yYf"/>
+                                    <constraint firstAttribute="bottom" secondItem="hXC-Xa-p2K" secondAttribute="bottom" constant="20" id="S8j-Fj-O1i"/>
+                                    <constraint firstItem="hXC-Xa-p2K" firstAttribute="leading" secondItem="JJ4-7C-vGG" secondAttribute="leading" constant="20" id="Yps-YJ-8jP"/>
                                     <constraint firstAttribute="height" constant="300" id="m5x-PW-ERt"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZr-7d-RNo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZr-7d-RNo" customClass="CustomButtons">
                                 <rect key="frame" x="20" y="452" width="163" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -43,7 +53,7 @@
                                     <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOY-8Y-QcU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOY-8Y-QcU" customClass="CustomButtons">
                                 <rect key="frame" x="20" y="504" width="151" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -56,7 +66,7 @@
                                     <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXd-KD-JwV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXd-KD-JwV" customClass="CustomButtons">
                                 <rect key="frame" x="243" y="452" width="91" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -69,7 +79,7 @@
                                     <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21d-3g-xrR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21d-3g-xrR" customClass="CustomButtons">
                                 <rect key="frame" x="239" y="504" width="95" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -79,6 +89,19 @@
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="21" minY="5" maxX="21" maxY="5"/>
                                 <state key="normal" title="Share">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9S-x1-x1b" customClass="CustomButtons">
+                                <rect key="frame" x="243" y="452" width="91" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Cqu-GI-6pO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="tAG-af-ceu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="19" minY="5" maxX="19" maxY="5"/>
+                                <state key="normal" title="Reset">
                                     <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
@@ -93,13 +116,17 @@
                             <constraint firstItem="RZr-7d-RNo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="452" id="EIR-fp-WZd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mXd-KD-JwV" secondAttribute="trailing" constant="41" id="HA4-fc-zXa"/>
                             <constraint firstItem="mXd-KD-JwV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="243" id="LzE-yi-HIK"/>
+                            <constraint firstItem="Y9S-x1-x1b" firstAttribute="leading" secondItem="RZr-7d-RNo" secondAttribute="trailing" constant="60" id="QJK-UP-ggO"/>
                             <constraint firstItem="JJ4-7C-vGG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="102" id="QTd-lj-eIZ"/>
                             <constraint firstItem="mXd-KD-JwV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="452" id="Qtp-E5-LMb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y9S-x1-x1b" secondAttribute="trailing" constant="41" id="SMZ-Ea-UTA"/>
                             <constraint firstItem="21d-3g-xrR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="239" id="UIb-xc-UqO"/>
                             <constraint firstItem="21d-3g-xrR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="504" id="fJO-t8-1GL"/>
                             <constraint firstItem="IOY-8Y-QcU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iVW-e6-q5O"/>
                             <constraint firstItem="21d-3g-xrR" firstAttribute="leading" secondItem="IOY-8Y-QcU" secondAttribute="trailing" constant="68" id="luU-Sb-zFf"/>
                             <constraint firstItem="IOY-8Y-QcU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="504" id="rfd-Ys-0pa"/>
+                            <constraint firstItem="Y9S-x1-x1b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="243" id="tUd-uN-Rk6"/>
+                            <constraint firstItem="Y9S-x1-x1b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="452" id="y8f-9s-skz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artist" id="ZMq-Hp-48J">
@@ -110,10 +137,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="canvasDrawView" destination="hXC-Xa-p2K" id="VWG-Bh-IL1"/>
                         <outlet property="canvasView" destination="JJ4-7C-vGG" id="pab-qJ-yu5"/>
                         <outlet property="drawButton" destination="mXd-KD-JwV" id="JrH-Z0-jae"/>
                         <outlet property="openPaletteButton" destination="RZr-7d-RNo" id="64m-dJ-vYn"/>
                         <outlet property="openTimerButton" destination="IOY-8Y-QcU" id="8sM-Ir-mml"/>
+                        <outlet property="resetButton" destination="Y9S-x1-x1b" id="Mja-WF-h5b"/>
                         <outlet property="shareButton" destination="21d-3g-xrR" id="cbg-cr-fdB"/>
                     </connections>
                 </viewController>
@@ -124,14 +153,68 @@
         <!--Drawings-->
         <scene sceneID="uau-7Z-pb0">
             <objects>
-                <viewController id="3ON-5P-0Jn" customClass="DrawingsViewController" sceneMemberID="viewController">
+                <viewController id="3ON-5P-0Jn" customClass="DrawingsViewController" customModule="RSSchool_T8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bBB-3M-QLO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ7-GE-Hyd" customClass="CustomButtons">
+                                <rect key="frame" x="88" y="94" width="200" height="34"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="47" minY="9" maxX="47" maxY="9"/>
+                                <state key="normal" title="Planet">
+                                    <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuI-mI-d05" customClass="CustomButtons">
+                                <rect key="frame" x="88" y="143" width="200" height="34"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="47" minY="9" maxX="47" maxY="9"/>
+                                <state key="normal" title="Head">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zl8-vT-KMG" customClass="CustomButtons">
+                                <rect key="frame" x="88" y="192" width="200" height="34"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="47" minY="9" maxX="47" maxY="9"/>
+                                <state key="normal" title="Tree">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yr1-DZ-1je" customClass="CustomButtons">
+                                <rect key="frame" x="88" y="241" width="200" height="34"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="47" minY="9" maxX="47" maxY="9"/>
+                                <state key="normal" title="Landscape">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ngM-Hx-fwc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ngM-Hx-fwc" firstAttribute="trailing" secondItem="LuI-mI-d05" secondAttribute="trailing" constant="87" id="4M0-5S-5BF"/>
+                            <constraint firstItem="Zl8-vT-KMG" firstAttribute="leading" secondItem="ngM-Hx-fwc" secondAttribute="leading" constant="88" id="6t2-79-wwa"/>
+                            <constraint firstItem="LuI-mI-d05" firstAttribute="leading" secondItem="ngM-Hx-fwc" secondAttribute="leading" constant="88" id="9Ou-lf-UtT"/>
+                            <constraint firstItem="JZ7-GE-Hyd" firstAttribute="top" secondItem="ngM-Hx-fwc" secondAttribute="top" constant="50" id="9pS-L6-7x7"/>
+                            <constraint firstItem="yr1-DZ-1je" firstAttribute="top" secondItem="Zl8-vT-KMG" secondAttribute="bottom" constant="15" id="D0Q-dh-eo0"/>
+                            <constraint firstItem="ngM-Hx-fwc" firstAttribute="trailing" secondItem="JZ7-GE-Hyd" secondAttribute="trailing" constant="87" id="KV4-mQ-JJh"/>
+                            <constraint firstItem="ngM-Hx-fwc" firstAttribute="trailing" secondItem="yr1-DZ-1je" secondAttribute="trailing" constant="87" id="Mrh-r8-3Nu"/>
+                            <constraint firstItem="ngM-Hx-fwc" firstAttribute="trailing" secondItem="Zl8-vT-KMG" secondAttribute="trailing" constant="87" id="NPY-MM-8at"/>
+                            <constraint firstItem="yr1-DZ-1je" firstAttribute="leading" secondItem="ngM-Hx-fwc" secondAttribute="leading" constant="88" id="PlK-OQ-3Z4"/>
+                            <constraint firstItem="JZ7-GE-Hyd" firstAttribute="leading" secondItem="ngM-Hx-fwc" secondAttribute="leading" constant="88" id="QgP-hA-xQE"/>
+                            <constraint firstItem="LuI-mI-d05" firstAttribute="top" secondItem="JZ7-GE-Hyd" secondAttribute="bottom" constant="15" id="fSF-WK-ARw"/>
+                            <constraint firstItem="Zl8-vT-KMG" firstAttribute="top" secondItem="LuI-mI-d05" secondAttribute="bottom" constant="15" id="iHP-v8-4Cj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Drawings" id="fAj-aT-15j"/>
+                    <connections>
+                        <outlet property="headButton" destination="LuI-mI-d05" id="fve-Ip-g5I"/>
+                        <outlet property="landscapeButton" destination="yr1-DZ-1je" id="nmi-3o-CYS"/>
+                        <outlet property="planetButton" destination="JZ7-GE-Hyd" id="NJh-x4-4dD"/>
+                        <outlet property="treebutton" destination="Zl8-vT-KMG" id="uaE-9r-u3P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jvs-z8-PrJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
