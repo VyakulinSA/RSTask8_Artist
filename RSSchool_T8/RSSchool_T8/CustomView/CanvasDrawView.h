@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CanvasDrawView : UIView
 @property (nonatomic) NSMutableArray<UIColor*> *canvasColorsArray;
 @property CGFloat strokeEndCounter;
-@property CGFloat strokeStartCounter;
 @property NSMutableString *layersName;
 
 @end

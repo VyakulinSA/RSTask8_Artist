@@ -17,15 +17,18 @@ class TimerViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        настраиваем view
         let shadowColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        self.view.layer.cornerRadius = 40
+        self.createShadow(view: self.view, shadowPathRadius: 40, color: shadowColor, opacity: 1, shadowRadius: 4, offset: CGSize.zero)
+//        настраиваем saveButton
         saveButton.backgroundColor = UIColor.white
         saveButton.layer.cornerRadius = 10
         self.createShadow(view: saveButton, shadowPathRadius: 10, color: shadowColor, opacity: 1, shadowRadius: 1, offset: CGSize.zero)
-        self.view.layer.cornerRadius = 40
-        self.createShadow(view: self.view, shadowPathRadius: 40, color: shadowColor, opacity: 1, shadowRadius: 4, offset: CGSize.zero)
+        
+//      устанавливаем значение для слайдера в соответствии с текущим выбранным свойством в контроллере с отрисовкой
         guard let del = delegate as? FirstViewController else {return}
-        slider.value = Float(del.timerInterval)
+        slider.value = Float(del.timerInterval) 
         timerLabel.text = "\((slider.value * 100).rounded() / 100) s"
         
         saveButton.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)

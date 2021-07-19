@@ -18,10 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [_saveButton addTarget:self action:@selector(saveButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    
     [self preSettPaletteButtons];
     
     _paletteColorsArray = [NSMutableArray new];
+    
+    [_saveButton addTarget:self action:@selector(saveButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 

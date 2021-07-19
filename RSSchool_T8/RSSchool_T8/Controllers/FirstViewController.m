@@ -35,7 +35,6 @@
     _shareButton.layer.opacity = 0.5;
     _resetButton.hidden = true;
     
-    //MARK: Удалить после создания слайдера
     _timerInterval = 1.0;
     
     _modalVC = [ModalViewController new];
@@ -60,6 +59,7 @@
 }
 
 -(void)openPaletteTapped:(UIButton *)sender{
+//    получаем у объекта всплывающих окон view и отображаем ее в текущем контролере по верх остальных на половину экрана
     _modalVC.view.frame = CGRectMake(0, self.view.frame.size.height - 333.5, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:_modalVC.view];
 }
@@ -70,21 +70,27 @@
 }
 
 -(void)drawButtonTapped:(UIButton *)button{
+//    отправляем в свойство для отрисовки название макета
     _canvasDrawView.layersName = [NSMutableString stringWithString:self.canvasLayersName];
+//    передаем цвета текущие выбранные
     _canvasDrawView.canvasColorsArray = _canvasColorsArray;
-    _canvasDrawView.layer.sublayers = nil;
+//    расчитывает шаг отрисовки
     CGFloat stepInterval = 1 / (60 * _timerInterval);
+//    меняем состояния кнопок во время отрисовки
     _openPaletteButton.enabled = false;
     _openPaletteButton.layer.opacity = 0.5;
     _openTimerButton.enabled = false;
     _openTimerButton.layer.opacity = 0.5;
     _drawButton.enabled = false;
     _drawButton.layer.opacity = 0.5;
-    self.canvasDrawView.strokeStartCounter = 0;
-    __block NSTimer *ctimer = [NSTimer scheduledTimerWithTimeInterval:0.01666667 repeats:true block:^(NSTimer * _Nonnull timer) {
+//    запускаем таймер для отрисовки
+    __block NSTimer *ctimer = [NSTimer scheduledTimerWithTimeInterval:0.01 repeats:true block:^(NSTimer * _Nonnull timer) {
+//        увеличиваем шаг каждый раз при срабатывании таймера
         self.canvasDrawView.strokeEndCounter = self.canvasDrawView.strokeEndCounter + stepInterval;
+//        перерисовываем картинку
         [self.canvasDrawView setNeedsDisplay];
         if (self.canvasDrawView.strokeEndCounter > 1.1){
+//            как только дошли до конца, отключаем таймер и задаем настройки кнопкам, после отрисовки
             [ctimer invalidate];
             self.canvasDrawView.strokeEndCounter = 0;
             self.drawButton.hidden = true;
@@ -112,10 +118,14 @@
 }
 
 -(void)shareButtonTapped:(UIButton *)button{
+//    для сохранения изображения, создаем квадрат видимости
     CGRect rect = _canvasDrawView.bounds;
+//    создаем контекст для считывания и отрисовки изображения
     UIGraphicsBeginImageContextWithOptions(rect.size, _canvasDrawView.opaque, 0.0);
     CGContextRef context = UIGraphicsGetCurrentContext();
+//    передаем слой рендериться в контекст
     [_canvasDrawView.layer renderInContext:context];
+//    получаем изображение со слоя
     UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     NSArray *imageArr = @[img];
@@ -123,57 +133,31 @@
     UIActivityViewController *activeVC = [[UIActivityViewController alloc] initWithActivityItems:imageArr applicationActivities:nil];
     activeVC.modalPresentationStyle = UIModalPresentationPopover;
     activeVC.popoverPresentationController.sourceView = self.view;
-    
     [self presentViewController:activeVC animated:true completion:nil];
-    
 }
-
-
-
-
 
 -(void)preSettElements {
     //Canvas
     _canvasView.backgroundColor = UIColor.whiteColor;
     _canvasView.layer.cornerRadius = 8;
-    
-    
-    
-    //Canvas shadow
     CGColorRef canvasShadowColor = [[[UIColor alloc] initWithRed:0 green:0.7 blue:1 alpha:0.25] CGColor];
     [self createShadowfor:_canvasView shadowPathRadius:8 color:canvasShadowColor opacity:1 shadowRadius:4 offset:CGSizeZero];
-    
-    
     //ButtonShadowColor
     CGColorRef buttonShadowColor = [[[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0.25] CGColor];
     //openPaletteButton
     [self preSettButtons:_openPaletteButton];
-    
-    //openPaletteButton shadow
     [self createShadowfor:_openPaletteButton shadowPathRadius:10 color:buttonShadowColor opacity:1 shadowRadius:1 offset:CGSizeZero];
-    
     //openTimerButton
     [self preSettButtons:_openTimerButton];
-    //openTimerButton shadow
     [self createShadowfor:_openTimerButton shadowPathRadius:10 color:buttonShadowColor opacity:1 shadowRadius:1 offset:CGSizeZero];
-    
     //drawButton
     [self preSettButtons:_drawButton];
-    //    _drawButton.hidden = true;
-    //drawButton shadow
     [self createShadowfor:_drawButton shadowPathRadius:10 color:buttonShadowColor opacity:1 shadowRadius:1 offset:CGSizeZero];
-    
     //resetButton
     [self preSettButtons:_resetButton];
-    //    _resetButton.hidden = true;
-    //resetButton shadow
     [self createShadowfor:_resetButton shadowPathRadius:10 color:buttonShadowColor opacity:1 shadowRadius:1 offset:CGSizeZero];
-    
     //shareButton
-    //    _shareButton.enabled = false;
-    //    _shareButton.layer.opacity = 0.5;
     [self preSettButtons:_shareButton];
-    //shareButton shadow
     [self createShadowfor:_shareButton shadowPathRadius:10 color:buttonShadowColor opacity:1 shadowRadius:1 offset:CGSizeZero];
     
     //navigationBar
@@ -199,7 +183,9 @@
 
 //MARK: ModalViewDelegate
 -(void)closeModalView{
+//    когда завкрываем модальное окно, удаляем view с экрана текущего контроллера
     [_modalVC.view removeFromSuperview];
+//    проверяем сколько цветов в массиве, недостающие добавляем как черные
     _canvasColorsArray = [NSMutableArray new];
     for (UIButton *button in _canvasButtonsArray) {
         [_canvasColorsArray addObject:button.subviews[0].backgroundColor];
@@ -207,7 +193,7 @@
     while (_canvasColorsArray.count != 3) {
         [_canvasColorsArray addObject:UIColor.blackColor];
     }
-    //Shuffle array
+    //Shuffle array - для случайного присвоения цвета
     NSUInteger count = [_canvasColorsArray count];
     if (count <= 1) return;
     for (NSUInteger i = 0; i < count - 1; ++i) {
